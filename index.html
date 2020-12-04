@@ -119,13 +119,15 @@
       </form>
     </div>
     </div>
-    <div class="fixed bottom-0 right-0 " >
-      <div class="flex mx-auto p-1  ">
-          <div class="border border-gray-400 shadow-2xl my-4 p-1 rounded-l">
-            <img src="https://static.chief.io/media/products/reCAPTCHA_logo.png" alt="recaptcha" class="w-10 mx-auto">
-            <div class="-mt-2  text-gray-700">
-              <a href="#" class="text-tiny hover:underline -mr-1 -mb-2">Privacy</a> <span class="text-tiny">-</span>
-              <a href="#" class="text-tiny hover:underline -ml-1 -mb-2">Terms</a>
+    <div id="recapcha" class="fixed bottom-0 right-0 transition duration-300 ease-in-out  transform translate-x-48 hover:translate-x-0" >
+      <div class="flex mx-auto p-1 my-auto" @mouseover="showElement = false" @mouseleave="showElement = true">
+          <div class="border border-gray-400 shadow-2xl mt-4 mb-4 p-1 rounded-l">
+            <img src="https://static.chief.io/media/products/reCAPTCHA_logo.png" alt="recaptcha" class="object-cover w-12 h-12  mx-4 my-auto -mb-2">
+            <div >
+              <div class="w-20 text-gray-700" :class="[ showElement ? 'block' : 'hidden' ]">
+              <a href="#" class="text-tiny hover:underline -mr-1 " >Privacy</a> <span class="text-tiny">-</span>
+              <a href="#" class="text-tiny hover:underline -ml-1 ">Terms</a>
+            </div>
             </div>
           </div>
           <div class="p-2 bg-blue-500 shadow-2xl my-4 rounded-r">
@@ -137,5 +139,20 @@
           </div>
       </div>
     </div>
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.6.12/dist/vue.js"></script>
+
+    <script>
+      new Vue({
+        el: "#recapcha",
+        data:{
+          showElement : true
+        },
+        methods: {
+          hideElement() {
+            this.showElement = false;
+          }
+        },
+      });
+    </script>
   </body>
 </html>
