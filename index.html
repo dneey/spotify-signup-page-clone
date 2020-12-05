@@ -119,12 +119,12 @@
       </form>
     </div>
     </div>
-    <div id="recapcha" class="fixed bottom-0 right-0 transition duration-300 ease-in-out  transform translate-x-48 hover:translate-x-0" >
-      <div class="flex mx-auto p-1 my-auto" @mouseover="showElement = false" @mouseleave="showElement = true">
-          <div class="border border-gray-400 shadow-2xl mt-4 mb-4 p-1 rounded-l">
+    <div id="recapcha" class="fixed bottom-0 right-0 transition duration-300 ease-in-out  transform translate-x-48 hover:translate-x-0 " >
+      <div class="flex mx-auto p-1 my-auto" @mouseover="hideElement" @mouseleave="showElement">
+          <div class="border border-gray-400 shadow-2xl mt-4 mb-4 p-1 rounded-l bg-white">
             <img src="https://static.chief.io/media/products/reCAPTCHA_logo.png" alt="recaptcha" class="object-cover w-12 h-12  mx-4 my-auto -mb-2">
             <div >
-              <div class="w-20 text-gray-700" :class="[ showElement ? 'block' : 'hidden' ]">
+              <div class="w-20 text-gray-700" :class="[ hidden ? 'block' : 'hidden' ]">
               <a href="#" class="text-tiny hover:underline -mr-1 " >Privacy</a> <span class="text-tiny">-</span>
               <a href="#" class="text-tiny hover:underline -ml-1 ">Terms</a>
             </div>
@@ -145,12 +145,15 @@
       new Vue({
         el: "#recapcha",
         data:{
-          showElement : true
+          hidden : true
         },
         methods: {
           hideElement() {
-            this.showElement = false;
-          }
+            setTimeout(() => {  this.hidden = false;  }, 100);
+          },
+           showElement() {
+            setTimeout(() => {  this.hidden = true;  }, 100);
+          },
         },
       });
     </script>
