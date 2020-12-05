@@ -12,13 +12,14 @@ module.exports = {
         green: '1px solid green',
       },
       fontSize: {
-        'tiny' : '0.10rem',
+        'tiny' : '0.35rem',
         'xl': '1.25rem',
         '2.5xl': '1.825rem',
         '3xl': '1.875rem',
        },
        spacing: {
         '28': '7.00rem',
+        '44':	'11rem',
         '72': '18rem',
         '84': '21rem',
         '96': '24rem',
