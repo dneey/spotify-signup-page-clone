@@ -1,164 +1,197 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Sign up - Spotify</title>
-    <link rel="icon" href="public/img/favicon.png" type="image/png">
 
-    <link rel="stylesheet" href="public/build/tailwind.css" />
-  </head>
-  <body class="font-helvetica  font-sans ">
-    <div class="flex justify-center mb-32">
-      <div class="lg:w-216 md:w-156 w-108 pb-3 ">
-        <a href="" class="flex justify-center items-start"><img src="public/img/logo.png" alt="spotify-logo" class="w-24 py-8 md:w-32"></a>
-        <h2 class="font-bold text-2.5xl tracking-tight text-center ">Sign up for free to start listening.</h2>
-        <div class="w-full flex justify-center">
-          <a href="#"
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sign up - Spotify</title>
+  <link rel="icon" href="public/img/favicon.png" type="image/png">
+
+  <link rel="stylesheet" href="public/build/tailwind.css" />
+</head>
+
+<body class="font-helvetica  font-sans ">
+  <div class="flex justify-center mb-32">
+    <div class="lg:w-216 md:w-156 w-108 pb-3 ">
+      <a href="" class="flex justify-center items-start"><img src="public/img/logo.png" alt="spotify-logo"
+          class="w-24 py-8 md:w-32"></a>
+      <h2 class="font-bold text-2.5xl tracking-tight text-center ">Sign up for free to start listening.</h2>
+      <div class="w-full flex justify-center">
+        <a href="#"
           class=" md:w-108 lg:w-108 px-16 py-3 border rounded-full mt-6 bg-blue-800 text-center text-white text-sm font-bold tracking-widest hover:bg-opacity-75 transform hover:scale-105 focus:scale-100 focus:bg-blue-900 focus:text-opacity-75 focus:bg-opacity-100">
           SIGN UP WITH FACEBOOK
         </a>
-        </div>
+      </div>
       <hr class="mt-8 mb-6 w-84 mx-auto border-gray-400">
-      <form action="" >
+      <form action="">
         <h3 class="text-center font-bold tracking-wide mt-0">Sign up with your email address</h3>
         <div class="flex-col justify-center w-11/12 md:w-4/6 lg:w-3/6 mx-auto ">
-        <div class="flex-grow mt-4">
-          <label for="email" class="inline-block font-extrabold text-xs my-2 tracking-wider ">What's your email?</label><br>
-            <input class="w-full py-4 px-2 border border-gray-500 placeholder-gray-600 rounded text-xs focus:outline-none focus:border-gray-900" type="text" placeholder="Enter your email.">
-        </div>
-        <div class="flex-grow mt-4">
-          <label for="email_confirmation" class="inline-block font-extrabold text-xs my-2 tracking-wider ">Confirm your email</label><br>
-            <input class="w-full py-4 px-2 border border-gray-500 placeholder-gray-600 rounded text-xs focus:outline-none focus:border-gray-900" type="text" placeholder="Enter your email again.">
-        </div>
-        <div class="flex-grow mt-4">
-          <label for="password" class="inline-block font-extrabold text-xs my-2 tracking-wider ">Create a password
-          </label><br>
-            <input class="w-full py-4 px-2 border border-gray-500 placeholder-gray-600 rounded text-xs focus:outline-none focus:border-gray-900" type="text" placeholder="Create a password.">
-        </div>
-        <div class="flex-grow mt-4">
-          <label for="profile_name" class="inline-block font-extrabold text-xs my-2 tracking-wider ">What should we call you?</label><br>
-            <input class="w-full py-4 px-2 border border-gray-500 placeholder-gray-600 rounded text-xs focus:outline-none focus:border-gray-900" type="text" placeholder="Enter a profile name">
-        </div>
-        <span class="block mt-2 text-xs font-semibold tracking-wide">This appears on your profile.</span>
-        <div class="flex-grow mt-4">
-          <span  class="inline-block font-extrabold text-xs mt-2 mb-1 tracking-wider ">What's your date of birth?</span>
+          <div class="flex-grow mt-4">
+            <label for="email" class="inline-block font-extrabold text-xs my-2 tracking-wider ">What's your
+              email?</label><br>
+            <input id="email"
+              class="w-full py-4 px-2 border border-gray-500 placeholder-gray-600 rounded text-xs focus:outline-none focus:border-gray-900"
+              type="text" placeholder="Enter your email.">
+          </div>
+          <div class="flex-grow mt-4">
+            <label for="email_confirmation" class="inline-block font-extrabold text-xs my-2 tracking-wider ">Confirm
+              your email</label><br>
+            <input id="email_confirmation"
+              class="w-full py-4 px-2 border border-gray-500 placeholder-gray-600 rounded text-xs focus:outline-none focus:border-gray-900"
+              type="text" placeholder="Enter your email again.">
+          </div>
+          <div class="flex-grow mt-4">
+            <label for="password" class="inline-block font-extrabold text-xs my-2 tracking-wider ">Create a password
+            </label><br>
+            <input id="password"
+              class="w-full py-4 px-2 border border-gray-500 placeholder-gray-600 rounded text-xs focus:outline-none focus:border-gray-900"
+              type="text" placeholder="Create a password.">
+          </div>
+          <div class="flex-grow mt-4">
+            <label for="profile_name" class="inline-block font-extrabold text-xs my-2 tracking-wider ">What should we
+              call you?</label><br>
+            <input id="profile_name"
+              class="w-full py-4 px-2 border border-gray-500 placeholder-gray-600 rounded text-xs focus:outline-none focus:border-gray-900"
+              type="text" placeholder="Enter a profile name">
+          </div>
+          <span class="block mt-2 text-xs font-semibold tracking-wide">This appears on your profile.</span>
+          <div class="flex-grow mt-4">
+            <span class="inline-block font-extrabold text-xs mt-2 mb-1 tracking-wider ">What's your date of
+              birth?</span>
             <div class="grid grid-cols-4 gap-4 text-xs font-semibold">
-            <div class="col-span-2">
-              <label class="block" for="month">Month</label>
-              <div class="flex items-start border border-gray-500  focus:outline-none focus:border-gray-900 rounded">
-              <select name="month" placeholder="Month" id=""  class="rounded py-4 px-2 pr-10 block tracking-wide w-full h-full  place-self-auto outline-none border-none bg-white appearance-none">
-                <option disabled value>Month</option>
-                <option value="January">January</option>
-                <option value="February">February</option>
-                <option value="January">March</option>
-                <option value="January">April</option>
-                <option value="January">May</option>
-                <option value="January">June</option>
-                <option value="January">July</option>
-                <option value="January">August</option>
-                <option value="January">September</option>
-                <option value="January">October</option>
-                <option value="January">November</option>
-                <option value="January">December</option>
-              </select>
-              <img src="public/img/down-arrow.svg" class="w-4 mx-auto my-auto pr-1">
-            </div>
-            </div>
-            <div class="px-2">
-              <label class="block tracking-wide" for="day">Day</label>
-              <input class="w-full py-4 px-2 border border-gray-500 placeholder-gray-600 rounded text-xs focus:outline-none focus:border-gray-900" type="text" placeholder="DD">
-            </div>
-            <div class="">
-              <label class="block tracking-wide" for="year">Year</label>
-              <input class="w-full py-4 px-2 border border-gray-500 placeholder-gray-600 rounded text-xs focus:outline-none focus:border-gray-900" type="text" placeholder="YYYY">
-            </div>
-          </div>
-        </div>
-        <div class="flex-col mt-4">
-          <span  class="block font-extrabold text-xs my-2 tracking-wider">What's your gender?</span>
-          <div class="flex">
-            <label for="gender" class="flex ">
-              <input type="radio" name="gender" class="my-auto hover:color-red-700">
-              <span class="text-xs my-auto ml-3 mr-8 text-center font-semibold tracking-wide">Male</span>
-            </label>
-            <label for="gender" class="flex ">
-              <input type="radio" name="gender" class="my-auto  border-solid border-green-900">
-              <span class="text-xs my-auto ml-3 mr-8 text-center font-semibold tracking-wide">Female</span>
-            </label>
-            <label for="gender-non-binary" class="flex ">
-              <input type="radio" name="gender" class="my-auto ">
-              <span class="text-xs my-auto ml-3 mr-8 text-center font-semibold tracking-wide">Non-binary</span>
-            </label>
-          </div>
-          <div class="flex mt-6">
-            <label for="consent-for-advertisement" class="flex my-auto mx-auto">
-            <input type="checkbox" class="mt-3">
-            <span class="text-xs mt-2 ml-3 mr-8 font-medium leading-relaxed tracking-wide">
-              Share my registration data with Spotify's content providers for marketing purposes.</span>
-          </label>
-        </div>
-          <div class="w-72 px-3 py-1 my-8 bg-gray-100 border border-gray-300 shadow-sm">
-            <div class="flex">
-              <span type="checkbox" class="w-6 h-6  my-auto border bg-white border-solid border-gray-400 hover:border-gray-500" ></span>
-              <span class="ml-2 text-sm my-auto" >I'm not a robot</span>
-              <div class="mx-auto -mr-2">
-                <img src="https://upload.wikimedia.org/wikipedia/commons/a/ad/RecaptchaLogo.svg" alt="recaptcha" class="w-12">
-                <div class="-mt-3 text-gray-700 text-center">
-                  <a href="#" class="text-tiny hover:underline">Privacy</a>
-                  <a href="#" class="text-tiny hover:underline">Terms</a>
+              <div class="col-span-2">
+                <label class="block" for="month">Month</label>
+                <div class="flex items-start border border-gray-500  focus:outline-none focus:border-gray-900 rounded">
+                  <select name="month" placeholder="Month" id="month"
+                    class="rounded py-4 px-2 pr-10 block tracking-wide w-full h-full  place-self-auto outline-none border-none bg-white appearance-none">
+                    <option disabled value>Month</option>
+                    <option value="January">January</option>
+                    <option value="February">February</option>
+                    <option value="January">March</option>
+                    <option value="January">April</option>
+                    <option value="January">May</option>
+                    <option value="January">June</option>
+                    <option value="January">July</option>
+                    <option value="January">August</option>
+                    <option value="January">September</option>
+                    <option value="January">October</option>
+                    <option value="January">November</option>
+                    <option value="January">December</option>
+                  </select>
+                  <img src="public/img/down-arrow.svg" class="w-4 mx-auto my-auto pr-1">
                 </div>
+              </div>
+              <div class="px-2">
+                <label class="block tracking-wide" for="day">Day</label>
+                <input id="day"
+                  class="w-full py-4 px-2 border border-gray-500 placeholder-gray-600 rounded text-xs focus:outline-none focus:border-gray-900"
+                  type="text" placeholder="DD">
+              </div>
+              <div>
+                <label class="block tracking-wide" for="year">Year</label>
+                <input id="year"
+                  class="w-full py-4 px-2 border border-gray-500 placeholder-gray-600 rounded text-xs focus:outline-none focus:border-gray-900"
+                  type="text" placeholder="YYYY">
               </div>
             </div>
           </div>
-          <div class="text-xs tracking-wide font-medium ">
-            <span class="inline-block text-center  mb-3">By clicking on Sign up, you agree to Spotify's <a href="" class="text-green-500 underline"> Terms and Conditions of Use.</a></span>
-            <span class="inline-block mx-2 text-center  mb-3">To learn more about how Spotify collects, uses, shares and protects your personal data please read Spotify's <a href="#" class="text-green-500 underline"> Privacy Policy.</a></span>
-            <button class="w-full p-3 uppercase text-sm font-bold text-white bg-green-600  rounded-full tracking-widest hover:bg-green-500 transform hover:scale-105 focus:scale-100 focus:bg-green-800 focus:text-opacity-75 focus:bg-opacity-100 outline-none">SIGN UP</button>
-            <div class=" text-center text-sm my-6">Have an account? <a href="#" class="text-green-500 underline">Log in</a>.</div>
-          </div>
+          <div class="flex-col mt-4">
+            <span class="block font-extrabold text-xs my-2 tracking-wider">What's your gender?</span>
+            <div class="flex">
+              <label for="male" class="flex ">
+                <input id="male" type="radio" name="gender" class="my-auto hover:color-red-700">
+                <span class="text-xs my-auto ml-3 mr-8 text-center font-semibold tracking-wide">Male</span>
+              </label>
+              <label for="female" class="flex ">
+                <input id="female" type="radio" name="gender" class="my-auto  border-solid border-green-900">
+                <span class="text-xs my-auto ml-3 mr-8 text-center font-semibold tracking-wide">Female</span>
+              </label>
+              <label for="non-binary" class="flex ">
+                <input id="non-binary" type="radio" name="gender" class="my-auto ">
+                <span class="text-xs my-auto ml-3 mr-8 text-center font-semibold tracking-wide">Non-binary</span>
+              </label>
+            </div>
+            <div class="flex mt-6">
+              <label for="consent-for-advertisement" class="flex my-auto mx-auto">
+                <input id="consent-for-advertisement" type="checkbox" class="mt-3">
+                <span class="text-xs mt-2 ml-3 mr-8 font-medium leading-relaxed tracking-wide">
+                  Share my registration data with Spotify's content providers for marketing purposes.</span>
+              </label>
+            </div>
+            <div class="w-72 px-3 py-1 my-8 bg-gray-100 border border-gray-300 shadow-sm">
+              <div class="flex">
+                <input type="checkbox"
+                  class="w-6 h-6  my-auto border bg-white border-solid border-gray-400 hover:border-gray-500">
+                </input>
+                <span class="ml-2 text-sm my-auto">I'm not a robot</span>
+                <div class="mx-auto -mr-2">
+                  <img src="https://upload.wikimedia.org/wikipedia/commons/a/ad/RecaptchaLogo.svg" alt="recaptcha"
+                    class="w-12">
+                  <div class="-mt-3 text-gray-700 text-center">
+                    <a href="#" class="text-tiny hover:underline">Privacy</a>
+                    <a href="#" class="text-tiny hover:underline">Terms</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="text-xs tracking-wide font-medium ">
+              <span class="inline-block text-center  mb-3">By clicking on Sign up, you agree to Spotify's <a href=""
+                  class="text-green-500 underline"> Terms and Conditions of Use.</a></span>
+              <span class="inline-block mx-2 text-center  mb-3">To learn more about how Spotify collects, uses, shares
+                and protects your personal data please read Spotify's <a href="#" class="text-green-500 underline">
+                  Privacy Policy.</a></span>
+              <button
+                class="w-full p-3 uppercase text-sm font-bold text-white bg-green-600  rounded-full tracking-widest hover:bg-green-500 transform hover:scale-105 focus:scale-100 focus:bg-green-800 focus:text-opacity-75 focus:bg-opacity-100 outline-none">SIGN
+                UP</button>
+              <div class=" text-center text-sm my-6">Have an account? <a href="#" class="text-green-500 underline">Log
+                  in</a>.</div>
+            </div>
           </div>
         </div>
       </form>
     </div>
-    </div>
-    <div id="recapcha" class="fixed bottom-0 right-0 transition duration-100 md:duration-300 ease-in-out  transform translate-x-44 hover:translate-x-0 " >
-      <div class="flex mx-auto p-1 my-auto" @mouseover="hideElement" @mouseleave="showElement">
-          <div class="border border-solid border-gray-400 shadow-2xl mt-4 mb-4 p-1 rounded-l bg-white">
-            <img src="https://static.chief.io/media/products/reCAPTCHA_logo.png" alt="recaptcha" class="object-cover w-12 h-12  mx-4 my-auto -mb-3">
-            <div >
-              <div class="w-20 text-gray-700 text-center " :class="[ hidden ? 'block' : 'hidden' ]">
-              <a href="#" class="text-tiny hover:underline -mr-1 " >Privacy</a> <span class="text-tiny">-</span>
-              <a href="#" class="text-tiny hover:underline -ml-1 ">Terms</a>
-            </div>
-            </div>
+  </div>
+  <div id="recapcha"
+    class="fixed bottom-0 right-0 transition duration-100 md:duration-300 ease-in-out  transform translate-x-44 hover:translate-x-0 ">
+    <div class="flex mx-auto p-1 my-auto" @mouseover="hideElement" @mouseleave="showElement">
+      <div class="border border-solid border-gray-400 shadow-2xl mt-4 mb-4 p-1 rounded-l bg-white">
+        <img src="https://static.chief.io/media/products/reCAPTCHA_logo.png" alt="recaptcha"
+          class="object-cover w-12 h-12  mx-4 my-auto -mb-3">
+        <div>
+          <div class="w-20 text-gray-700 text-center " :class="[ hidden ? 'block' : 'hidden' ]">
+            <a href="#" class="text-tiny hover:underline -mr-1 ">Privacy</a> <span class="text-tiny">-</span>
+            <a href="#" class="text-tiny hover:underline -ml-1 ">Terms</a>
           </div>
-          <div class="p-2 bg-blue-500 shadow-2xl my-4 rounded-r">
-            <span class="text-xs text-white font-semibold">protected by <strong>reCAPTCHA</strong></span>
-            <div class="-mt-3 text-gray-700 py-2">
-              <a href="#" class="text-tiny hover:underline -mr-1 text-white">Privacy</a> <span class="text-tiny text-white">-</span>
-              <a href="#" class="text-tiny hover:underline -ml-1 text-white">Terms</a>
-            </div>
-          </div>
+        </div>
+      </div>
+      <div class="p-2 bg-blue-500 shadow-2xl my-4 rounded-r">
+        <span class="text-xs text-white font-semibold">protected by <strong>reCAPTCHA</strong></span>
+        <div class="-mt-3 text-gray-700 py-2">
+          <a href="#" class="text-tiny hover:underline -mr-1 text-white">Privacy</a> <span
+            class="text-tiny text-white">-</span>
+          <a href="#" class="text-tiny hover:underline -ml-1 text-white">Terms</a>
+        </div>
       </div>
     </div>
-    <script src="https://cdn.jsdelivr.net/npm/vue@2.6.12/dist/vue.js"></script>
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/vue@2.6.12/dist/vue.js"></script>
 
-    <script>
-      new Vue({
-        el: "#recapcha",
-        data:{
-          hidden : true
+  <script>
+    new Vue({
+      el: "#recapcha",
+      data: {
+        hidden: true
+      },
+      methods: {
+        hideElement() {
+          setTimeout(() => { this.hidden = false; }, 100);
         },
-        methods: {
-          hideElement() {
-            setTimeout(() => {  this.hidden = false;  }, 100);
-          },
-           showElement() {
-            setTimeout(() => {  this.hidden = true;  }, 100);
-          },
+        showElement() {
+          setTimeout(() => { this.hidden = true; }, 100);
         },
-      });
-    </script>
-  </body>
+      },
+    });
+  </script>
+</body>
+
 </html>
